@@ -1,0 +1,53 @@
+internet není web
+internet propojuje jednotlivá zařízení
+  infrastruktura, která umožňuje web používat, hardware, network - železo a počítače
+  propojuje navzájem řízení
+  umožňuje komunikaci mezi zařízeními
+  je podmínkou pro fuhngování webu
+web je tedy software nad tím, který propojuje konkrétně lidi
+  soubor webových stránek uložených na webových server a propojených k místním počítačům prostřednictvím internetu
+  zajišťuje příjem informací
+  client x servere - request x response - něco/někdo se ptá - něco odpovídá
+  client - mobilní telefon, počítač, atd. - pokládá požadavek na běžící server
+  v rámci prohlížeče - když zadám webovou adresu - vyšle se požadavek na daný server a žádá zdroje
+    vrací se image, pdf atd.
+    server obsahuje jednotlivé zdroje a dadtabáze atd. - server je jakoby kuchyň :D
+URL - uniform resource locator
+  adresa daného zdroje (resource) - říká, jaký resource žádáme - totéž, co adresářová struktura - jen to žádám po jiném počítači
+  cesta/adresář public
+  default - https://example.com
+protocol/scheme (HTTP/HTTPS) - používá se pro šifrovanou komunikaci mezi client a server
+  HyperText Transfer Protocol, S = secure
+  pravidla pro komunikaci mezi prohlížečem a serverem
+  umožňuje posílat hypermedia (linky na cokoliv...)
+  v principu je to plain text
+  když je stránka bez šifrování může to být problém
+doména/subdoména
+  musíme jít z nejobeznějšího ke konkrétnímu
+  musí se rozklíčovat o jakou doménu jde - .com je hlavní doména a blog.example.com - blog. je subdoména
+  to co je za / je struktura, co jde do nějaké hloubky, abychom mohli najít konkrétní resource
+cesta/adresář (Query stringd a aparametry)
+  filtrování daných zdrojů a umožňují definovat jejich typy atd, je to udělaný jako dvojice
+    ? - query string
+    & - separator
+    type, post - parametr
+IP adress (nic nám neřekl)
+  v poslední době se používá verze 6
+  k tomu, abychom mohli vzdálený server žádat o zdroje, potřebujeme něco, co umí překládat naše requesty do něčeho, čemu stroj rozumí
+    IP adress - DNS - Domain Name System
+  my serveru pošleme adresu serveru ve svojí řeči a prohlížeč to přeloží pomocí DNS a pak to vrátí a browser se zeptá
+    web pak odpoví na request
+typy serverů
+  trojí označení
+    web server - přijímá požadavky clientů
+    aplikační server - obsahuje ablikaci, logika toho, co se má dít
+    databázový server - data jako taková
+
+git
+zvolím si složky (nějakého projektu) - repozitář (inicializace adresáře)
+vytvoří se skrytá složka .git - sleduje změny, které jsem provedla, když to smažu o všechno přijdu :D
+kdykoliv změním soubor (přidání, odebrání, přepsání) - dává se do modifikace - mám dvě obrazovky - předtím a potom
+dávám je do stavu (stage) a to jsou stage, se kterými chci pracovat
+vytvořím si snapshot a z nich commit - což bude moje základní jednotka
+  stage x commit
+
