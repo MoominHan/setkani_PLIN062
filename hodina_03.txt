@@ -1,0 +1,41 @@
+HTML - CSS - JavaScript - jak když stavíme domeček
+css umožňuje vzhled a javascript umožňuje klikat a dávat odpovědi
+HTML - značkovací jazyk - Hypertext Markup Language
+značkovací není programovací
+"obsah" webové stránky + její struktura
+dokáže, má v sobě od nějaké fáze, propojovat jednotlivá média skrze internet
+html řekne co je co - nadpis/paragraf/subsekce/...
+html se skládá z elementu = staební blok <p class= "foo"> This is a paragraph. </p> - tohle je odstavec
+jednotlivé elementy mohou (ale nemusí) obsahovat libovolné množství atributů
+atribut - <jméno atributu=  "hodnota">
+<p class= "foo">  (startovní tag)... </p> párový tag
+některé elementy mohou být ale i nepárové (/link, /br, /img, /hr)
+
+základní značky
+ většinu obsahu chceme mít v <main> pak podúrovně třeba <h1> až h6 (v praxi max do h4)
+ <nav>
+ <ul>
+ <li> - list
+ <p> - odstavec
+ <section> - má v sobě jednotlivou část toho obsahu - často mívá podnadpis
+
+propojování s jinými médii
+
+
+  main - hlavní oblast stránky
+  title - i když je v mainu značí, jak se jmenuje stránka
+  
+specialitka, kterou html nabízí
+  <div> je párová, slouží k tomu, když chceme nějako učást zanořit a strukturovat nesémantickým způsobem
+        uvidím totež, ale není jasné, co obsahuje co - obecné strukturování, používá se k vizuálním věcem
+  <span> taky párový funguje podobně
+
+komentáře - se zanačí <!-- -->
+
+závěrečný projekt:
+1. Osobní porfolio – CSS, multipage, animace, trochu javaScriptu
+2. UI jednoduchého e-shopu – míň CSS, víc javaScriptu
+3. Jednoduchá weather app – všechno + práce s API, zajímavý projekt do portfolia
+4. ...?
+
+odevzdání po třech částech - příšt í týden požadavky na konkrétní části

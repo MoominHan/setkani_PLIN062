@@ -1,0 +1,46 @@
+čtyři základní typy elementů
+  blokové elementy - vytváří obdélníček - je to hlavní struktura, která může mít další zanořené blokové elementy
+    <p> - paragraf
+  inline elementy - obalují textový obsah - formátoování, chování textu - zápis odkazu <ahref=... - neobsahuje v sobě nic jiného
+  sémantické elementy - významové - hlavní, udávají význam daným celkům - naprostá většina html značek
+  nesémantické elementy - slouží primárně k tomu, abychom stylovali, ohraničovali části jiných elementů
+  
+  blokové elementy 
+    <div>, který je i nesémantickým
+    <p> paragraf
+    <h1> nadpisy
+    <ul> seznam
+    tvoří blok (obdélník) - defaultně zabírá celou šířku
+  inline elementy
+    <span>, který je i nesémantický
+    <a href=>link</a> 
+    <b> tučný
+    <u> podtržení
+    <i> italika
+    <code>
+    <input> slouží k získávání inputu od uživatele
+    <button> prostě button (NENÍ BLOKOVÝ)
+    <img src=...>
+
+  blok elementy mají šířku rodiče - stromová struktura - element, kteerý je blokový a obsahuje vnořený blokový element, ten má stejnou šířku jako rodiče
+  inline elementy neřeší rodiče, ale jsou defaultně tak, jak mají text v sobě - nezalamují řádky narozdíl od block elementů
+  blokové elementy v sobě můžou mít zanořené cokoliv, inlinové jen inlinový prvek nebo textový obsah
+  
+  dva různé zápisy pro zachycení tučného textu - <strong>/ <b> a italiku <em>/ <i>
+
+atributy - některé elementy mají atributy, které mohou využívat, nejenom ty obecné
+
+zajímavější elementy
+  tabulky - dřív se tabulky dělaly prehistorickým způsobem
+
+  formuláře - důležitá věc 
+    jakékoliv elementy, které chtějí input od uživatele a jsou schopny s nimi pracovat
+    nejsou pouze textové povahy, můžou mít různou multimediální povahu - soubory, barva atd.
+    <input>, <textarea>, <select>, <option>,...
+    pracují s identifikací - pomocí atributů
+      name="username", id="username"
+    vždy jsou obalené blokovém elementem <form>
+    <label> - umožňuje popsat daný formulářový prvek
+
+<button> je jiný element než <input type="button"/> - rozdíl je v tom, že když chci využívat tlačítko ve formuláři je fajn používat input - zanořování do <form> elementu
+každý formulář sbírá jiné informace 35:00
