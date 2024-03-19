@@ -43,4 +43,26 @@ zajímavější elementy
     <label> - umožňuje popsat daný formulářový prvek
 
 <button> je jiný element než <input type="button"/> - rozdíl je v tom, že když chci využívat tlačítko ve formuláři je fajn používat input - zanořování do <form> elementu
-každý formulář sbírá jiné informace 35:00
+každý formulář sbírá jiné informace, obsahuje submit button
+  <input="submit".../>
+  všechny elementy <input..> se budou reflektovat ve <form>, protože jsou na něj navázány
+
+<select> vyžaduje některé atributy, ale i potomky <option> třeba
+
+meta tagy
+  SEO = Search engine optimization
+  metadata se ukládají v <head> <meta> - description vždy vyplněné!
+  *materiály - extention na google chrome*
+reserved characters
+  znaky, které mají v jazyku význam
+  kdybych je tam z nějakého důvodu chtěla mít - používají se HTML entity
+
+Web Accessibility Initiative's Accessible Rich Internet Application - WAI ARIA
+  pro lidi se speciálními potřebami
+  na jakýkoliv element můžu přidat speciální atribut - role, stav, vlastnost - řekne, co ten daný element dostává, nezcela to splňujou sémantické atributy
+
+  *<header> x <head>*
+
+<class> kaskádové styly -lze obalit elementem <div>
+ZÁVĚREČNÝ PROJEKT 
+  v HTML řešit čistě jen strukturu a ne vzhled

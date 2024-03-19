@@ -4,12 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <meta name="description" content="Document 1 něco něco">
 </head>
 <body>
   <form>
-    <input type="text"/>
-    <input type="color"/>
-    <input type="button" value="ahoj"/>
+    <label for="username">Username</label>
+    <input name="username" id="username" type="text"/>
+
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date"/>
+
+    <label for="textarea">Textarea:</label>
+    <textarea name="textarea" id="textarea" cols="33" rows="5"></textarea>
+
+    <label for="select-input">Select:</label>
+    <select name="select-input" id="select-input">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+
+    <input type="submit" value="odeslat"/>
   </form>
 </body>
 </html>

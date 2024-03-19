@@ -1,0 +1,116 @@
+CSS - cascading style sheets
+  sada pravidel, které nám umožňují stylovat html dokumenty, ale nejen ty - můžeme stylovat webové stránky, e-booky atd.
+  jazyk určený ke stylování
+  šetří čas - write once
+  řeší layout (prvky na stránce), animace
+  fungují v základu velmi jednoduše - máme už hotové html, které měníme na základě kaskádových stylů
+  selektor - aplikuje se na ten element vše co odpovídá selektoru
+  property - definovaná vlastnost
+  value - hodnota property
+  *nezapomínat na středník...!*
+
+selektory
+  HTML class obsahuje třídy, které využíváme v CSS
+  definice obecných vlastností .btn{padding:..; color:...;}
+  pak můžeme u každého buttonu specifikovat - .btn-1{background-color:...;}
+  třída je vždy uvozena tečkou - .btn
+  lze psát i přes ID - to my ale moc dělat nechceme
+  lze je kombinovat - často vhodné - button.btn{padding:...; color:...;}
+
+toto ulehčí psaní kaskárových stylů:
+  kaskáda funguje tím způsobem, že to stéká dolů, nabaluje se to a jde to do nejnižší úrovně
+  konkrétně třeba:
+    <style>
+      .title{
+        color:..;
+      }
+      .title{
+        color:...;
+      }
+    </style>
+    <h1 class="title">Cool Title</h1>
+  !pokud se to rovná, tak poslední vyhrává
+
+  <style>
+    .main-brand-2 {
+      border: 1px solid black;
+      color: red;
+    }
+    .title-2 {
+      color: green;
+    }
+  </style>
+  <h1 class="title-2 main-brand-2">Branding here</h1>
+!pokud není konflikt a selektory mají stejnou váhu, vždy se jede od shora dolů - tady je color v konfliktu a změní se tedy
+
+specifita
+  jakákoliv vlastnost, která není v konfliktu se zanechá
+  první selektor obsahuje dvě třídy - vítězí ten, který je specifičtější
+    <style>
+      .main-brand-3.title-3 {
+        color: red;
+      }
+
+      .title-3 {
+        color: green;
+      }
+  </style>
+  <h1 class="title-3 main-brand-3">Branding here</h1>
+
+  <style>
+    .title-4 {
+      color: orange;
+    }
+
+    h1 {
+      color: green;
+    }
+  </style>
+  <h1 class="title-4">Another h1</h1>
+  v tomto případě je tčída (title) specifičtější než element (h1)
+
+třída (class) je více specifická než tag - pro stylování je lepší class
+  <style>
+    h1.main-brand-5 {
+      color: red;
+    }
+  
+    .main-brand-5.title-5 {
+      color: orange;
+    }
+  
+    .main-brand-5 {
+      color: green;
+    }
+  </style>
+  <h1 class="title-5 main-brand-5">Another Example</h1>
+  vyhraje oranžová
+
+jak to NEDĚLAT - nebude to tolerovat v úkolech
+  <style>
+    #site-brand-2 {
+      color: red;
+      border: 1px solid red;
+    }
+    .nav-head-2 {
+    color: green !important; - TAKHLE NE
+    border: 1px solid green;
+    }
+  </style>
+  <h1 id="site-brand-2" class="nav-head-2 nav-main-2 other-useful-class-2">
+    The Brand of my Website
+  </h1>
+*styly v samostatném souboru*
+
+box model
+  anatomie každého blokového elementu - každý element typu block se sestává z vrstev
+    vnější okraj - margin
+    ohraničení - border
+    vnitřní ohraničení - padding - dává konkrétní obsah od ohraničení
+    content - má nejaké vlastnosti - výšku, šířku
+    
+htlm 5
+pod <title>document - <link rel="stylesheet" href="style.css"/>
+v body má <div
+
+
